@@ -1,14 +1,8 @@
 [build]
+# Compile for Respberry pi 3
 # target="armv7-unknown-linux-musleabihf"
 
-# [target.armv7-unknown-linux-gnueabihf]
-# linker    = "arm-linux-gnueabihf-gcc"
-# rustflags = ["-C", "linker=arm-linux-gnueabihf-gcc"]
+[target.armv7-unknown-linux-gnueabihf]
+linker    = "arm-linux-gnueabihf-gcc"
+rustflags = ["-C", "linker=arm-linux-gnueabihf-gcc"]
 
-# [target.armv7-unknown-linux-musleabihf]
-# linker    = "arm-linux-gnueabihf-ld"
-# rustflags = ["-C", "linker=arm-linux-gnueabihf-gcc"]
-
-[target.armv7-unknown-linux-c]
-linker = "arm-linux-gnueabihf-ld"
-# rustflags = ["-C", "linker=arm-linux-gnueabihf-ld"]
